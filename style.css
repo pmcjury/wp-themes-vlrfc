@@ -1,0 +1,109 @@
+﻿/*
+Theme Name: VLRFC 
+Theme URI: http://villagelions.org/
+Description: This theme for the Village Lions Rugby Football Club 2009.
+Version: 1.0
+Author: Allen Suarez , Patrick H. McJury
+Author URI: http://patrickmcjury.com
+Tags: villagelions, vlrfc, rugby , 2009
+
+	VLRFC 1.0
+	 http://patrickmcjury.com
+
+	This theme was design by Allen Suarez and programmed by Patrick H. McJury
+
+*/
+h1 { padding: 10px 0 10px 10px; margin: 10px 0; background-color: #000; color: #fff; font-size: 20px; font-weight: bold;}
+h1 a{ color:#fff }
+
+#container { margin: 0 auto; width: 900px; background-color: #fff; text-align: left; position: relative;}
+
+#header { position: relative; height: 191px; margin-bottom: 6px;}
+#header img { position: absolute; top: 0; left: 0; z-index: 0;}
+#header p { padding: 10px 10px 0; color: #fff; text-transform: uppercase; font-size: 11px; position: absolute; top: 0; z-index: 10;}
+#header p.header_text_left { left: 0;}
+#header p.header_text_right { right : 0; text-align: right;}
+
+/* Styles for the Navigation & Dropdown menus */
+#nav_main { height: 36px; padding-left: 55px; border-top: 1px solid #c00; border-bottom: 1px solid #c00; background-color: #000; margin-bottom: 6px; position: relative; z-index: 5;}
+#nav_main li a { font-size: 15px; font-weight: bold; line-height: 36px; color: #fff; padding: 0 10px; text-decoration: none; text-transform: uppercase; display: block; border-left: 1px solid #c00;}
+#nav_main li { /* all list items */ float: left;}
+#nav_main li a.last_link { border-right: 1px solid #c00;}
+#nav_main a:hover { background-color: #c00;}
+
+#nav_main li ul { /* second-level lists */ position: absolute; background-color: #c00; width: 160px; left: auto; line-height: 28px; display: none; /* using left instead of display to hide menus because display: none isn't read by screen readers */}
+/*#nav_main li:hover ul,*/ 
+#nav_main li.sfhover ul { /* lists nested under hovered list items */ left: auto; display:block;}
+
+#nav_main li ul li { width: 160px;}
+#nav_main li ul li a { background-color: #c00; color: #fff; width: 100%; font-size: 13px; line-height: 28px; border-left-color: #c00;}
+#nav_main li ul li a:hover { background-color: #000; color: #fff; border-left-color: #000;}
+
+
+#content_container { background: #e1e1e1 url('images/bg_body.jpg') no-repeat left top; overflow: hidden; border-top: 1px solid #999; padding-top: 10px;}
+#content_container a { color: #c00; font-weight: bold; text-decoration: none;}
+#content_container a:hover { text-decoration: underline;}
+
+#content_main { float: left; width: 70%;}
+#content_main_full{ width: 95%; margin: 0 24px;}
+#content_main_inner { margin: 0 0 0 24px; }
+#content_main_inner p{padding:10px 0; font-size:1em}
+#content_main_inner form input { padding: 3px 5px;}
+#content_main_inner form table { padding: 10px 20px;}
+#content_main_inner form table tr td { padding-bottom: 10px; line-height: 24px;}
+#content_main_inner form table tr td input, #content_main_inner input { border: 1px solid #ccc;}
+#content_main_inner form table tr td input.form_submit, #content_main_inner input.form_submit{ font-weight: bold; padding: 5px 7px; color: #fff; background-color: #333; cursor: pointer;}
+
+#sidebar { float: right; width: 29.9%;}
+#sidebar_inner { padding-right: 24px; padding-left: 10px; text-align: center; }
+#sidebar_inner img { padding-bottom: 20px;}
+#sidebar_inner div.login_box { width: 235px; height: 215px; background: url('images/bg_loginbox.gif') no-repeat left top; color: #fff; position: relative; margin-bottom: 15px; text-align: left; z-index: 1;}
+#sidebar_inner div.login_box h2 { font-weight: bold; font-size: 14px; padding: 8px 0 10px 11px;}
+#sidebar_inner div.login_box p { font-size: 14px; font-weight: bold; position: absolute; bottom: 20px; left: 15px; padding: 0; line-height: 1.2em;}
+#sidebar_inner div.login_box p a { color: #000;}
+#sidebar_inner div.login_box div#grid { position: absolute; left: 20px; top: 45px;}
+#sidebar_inner div.login_box div#grid div { float: left; width: 34px; height: 34px; margin: 0px 3px 3px 0px;}
+#sidebar_inner div.widget_links { margin-top: 20px;}
+#sidebar_inner div.widget_links h2 { text-transform: uppercase; font-weight: bold; font-size: 18px; padding-bottom: 10px;}
+#sidebar_inner div.widget_links img { padding-bottom: 10px;}
+#sidebar_inner div.widget_categories{}
+#sidebar_inner div.widget_categories h2{  text-transform: uppercase; font-weight: bold; font-size: 18px; padding-bottom: 10px;}
+#sidebar_inner div.widget_categories ul { list-style: circle inside;}
+#sidebar_inner div.widget_categories ul li{ text-align: left; margin:5px 0;}
+#sidebar_inner div.widget_categories ul li ul{ list-style-type: disc;}
+#sidebar_inner div.widget_categories ul.children{ padding-left:20px;}
+#footer { clear: both; }
+#footer p { padding: 15px 15px 15px 24px;; font-size: 12px;}
+
+/* Miscellaneous Classes */
+.clear{clear: both; float: none; display: block;}
+.full_width{ width:99%;}
+.no_topmargin { margin-top: 0;}
+.add_bottom_margin { margin-bottom: 10px;}
+.alignRight { text-align: right;}
+.floatLeft { float: left; padding: 10px 10px 10px 0;}
+.floatRight { float: right; padding: 10px 0 10px 10px;}
+.bold { font-weight: bold; font-size: 16px; padding: Opx;}
+small { font-size:12px;}
+.navigation { font-size: 13px;}
+.paged-navigation{display: block;font-size: 12px;width: 100%;clear: both;}
+.paged-alignleft{display: block;float: left;width: 49%;padding: 0px;text-align: left;}
+.paged-alignright{display: block;float: left;width: 49%;padding: 0px;text-align: right;}
+img.alignright,  .alignright{ padding: 4px 0px 4px 8px; display: right; }
+img.alignleft, .alignleft { padding: 4px 8px 4px 0px; float: left; }
+.classic{ clear:both; padding:5px 0px;}
+.sticky_post{ border: 2px solid #C00; background-color: #fff; padding: 10px; margin-bottom: 10px;}
+.sticky_post p{ color: #000; font-size: 1.1em;}
+.sticky_post small{ font-size: 11px; color: #333; background: #FFE2DF; padding:2px 5px;}
+/* tables */
+table.awards{ padding: 7px; margin: 5px 0px; width: 98%;  border-right: 1px solid #ccc; }
+table.awards th { padding: 4px 8px; background: #CC0000; font-weight: bold; font-size: 18px; color:#FFF; text-align: left; border: 1px solid #CC0000; }
+table.awards tr.header { border: 1px solid #000;}
+table.awards tr { background: #CFCFCF;}
+table.awards tr.alt { background: #DFDFDF;}
+table.awards td { padding: 4px 5px; border-bottom: 1px solid #FFF; font-size: 14px;}
+table.awards td.bold { font-weight: bold; border-left: 1px solid #CC0000; font-size: 12px;}
+table.awards td.men {}
+table.awards td.women { border-right: 1px solid #CC0000;}
+table.awards td.last { border-bottom: 1px solid #CC0000;}
+#shopping-cart{ background-color:#EEE;}
