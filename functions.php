@@ -42,9 +42,10 @@ if ( function_exists('register_sidebar') ) {
     ));
 
 }
-if ( function_exists( 'add_theme_support' ) ) {
-    add_theme_support( 'menus' );
-}
+
+register_nav_menu( 'main', 'Main Menu' );
+register_nav_menu( 'tournament', 'Tournament Menu' );
+
 /* Theme option page. Nothing too fancy just some defualt header stuff */
 add_action('admin_menu', 'vlrfc_theme_page');
 function vlrfc_theme_page() {

@@ -57,32 +57,7 @@
                 <?php dynamic_sidebar('Premium Tournament Sponsors'); ?>
             </div>
             <div id="header" >
-                <img name="header_only" src="<?php bloginfo('stylesheet_directory'); ?>/4leafs/images/4LEAF_horizontal.jpg" width="800" height="276" alt="Villag Lions New York CIty Four Leaf Fifteens 2010 Annual Tournament" />
+                <img name="header_only" src="<?php bloginfo('stylesheet_directory'); ?>/4leafs/images/banner.png" alt="Village Lions New York CIty Four Leaf Fifteens Annual Tournament" />
             </div> <!-- end of div#header -->
-            <div id="nav_main" class="">
-                <?php
-                if($post->post_parent) {
-                    if(count($post->ancestors) > 1) {
-                        $id = '';
-                        foreach( $post->ancestors as $ancestor ) {
-                            if( $post->post_parent != $ancestor ) {
-                                $id = $ancestor;
-                            }
-                        }
-                        $children .= wp_list_pages("title_li=&child_of=".$id."&echo=0&depth=2&exclude=571,572,573");
-                    }
-                    else {
-                        $children .= wp_list_pages("title_li=&child_of=".$post->post_parent."&echo=0&depth=2&exclude=571,572,573");
-                    }
-                }
-                else {
-                    $children .= wp_list_pages("title_li=&child_of=".$post->ID."&echo=0&depth=2&exclude=571,572,573");
-                }
-                if ($children) { ?>
-                <ul>
-                    <li><a href='<?php bloginfo('url') ?>/tournament'>Home</a></li>
-                        <?php echo $children; ?>
-                </ul>
-                <?php } ?>
-            </div>
+            <?php wp_nav_menu( array( 'menu' => 'Tournament Nav', 'container_id' =>'nav_main'  ) ); ?>
 <?php 
