@@ -26,13 +26,11 @@ get_header(); ?>
                                         <?php 
                                             switch( get_post_meta( $post->ID, 'schedule_display', true ) ){
                                                 case 'list':
-                                                    display_schedule_as_list( $schedule );
+                                                    PmcSkedjoolHelper::display_schedule_as_list( $schedule );
                                                     break;
                                                 case 'divs':
-                                                    display_schedule_as_divs( $schedule );
-                                                    break;
-                                                default:
-                                                    display_schedule_as_table( $schedule );
+                                               	default :
+                                                    PmcSkedjoolHelper::display_schedule_as_divs( $schedule );
                                                     break;
                                             }
                                             the_excerpt();
